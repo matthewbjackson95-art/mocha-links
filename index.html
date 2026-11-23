@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mocha Views · Matthew</title>
+<meta name="description" content="Style · Fitness · Travel. DC area. Every photo is mine.">
+<meta name="theme-color" content="#1E1A17">
+<meta property="og:title" content="Mocha Views · Matthew">
+<meta property="og:description" content="Style · Fitness · Travel. DC area.">
+<meta property="og:image" content="avatar.jpg">
+<link rel="icon" href="avatar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --espresso:#1E1A17; --mocha:#6F4E37; --camel:#B08D6A; --cream:#F5EBDD; --olive:#4F5B3A;
+    --line:rgba(245,235,221,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{min-height:100%}
+  body{
+    background:radial-gradient(120% 80% at 50% -10%, #3B2A20 0%, var(--espresso) 55%) fixed, var(--espresso);
+    color:var(--cream); font-family:Inter,system-ui,-apple-system,sans-serif;
+    display:flex; justify-content:center; padding:56px 16px 40px;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{width:100%; max-width:440px; text-align:center}
+  .avatar{
+    width:112px; height:112px; border-radius:50%; object-fit:cover;
+    border:1px solid var(--camel); padding:4px; background:var(--espresso);
+  }
+  h1{
+    font-family:"Playfair Display",Georgia,serif; font-weight:600;
+    font-size:34px; letter-spacing:.5px; margin-top:20px;
+  }
+  .handle{font-size:12px; letter-spacing:4px; text-transform:uppercase; color:var(--camel); margin-top:8px}
+  .bio{font-size:15px; line-height:1.6; color:rgba(245,235,221,.78); margin-top:18px}
+  .bio em{font-family:"Playfair Display",Georgia,serif; font-style:italic; color:var(--cream)}
+  .links{display:flex; flex-direction:column; gap:12px; margin-top:36px}
+  a.btn{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 22px; border:1px solid var(--line); border-radius:14px;
+    color:var(--cream); text-decoration:none; font-weight:500; font-size:15px;
+    background:rgba(245,235,221,.04); transition:background .2s,border-color .2s,transform .2s;
+  }
+  a.btn:hover{background:rgba(176,141,106,.12); border-color:var(--camel); transform:translateY(-1px)}
+  a.btn span.arrow{color:var(--camel); font-size:18px}
+  a.btn.primary{background:var(--cream); color:var(--espresso); border-color:var(--cream)}
+  a.btn.primary span.arrow{color:var(--mocha)}
+  .soon{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 22px; border:1px dashed var(--line); border-radius:14px;
+    color:rgba(245,235,221,.45); font-size:15px;
+  }
+  .soon small{font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--camel)}
+  .pillars{display:flex; justify-content:center; gap:7px; margin-top:40px; white-space:nowrap}
+  .pillars span{font-size:10px; letter-spacing:2px; text-transform:uppercase; color:rgba(245,235,221,.5)}
+  .pillars span+span::before{content:"·"; margin-right:7px; color:var(--camel)}
+  footer{margin-top:44px; font-size:11px; letter-spacing:4px; text-transform:uppercase; color:rgba(245,235,221,.35)}
+</style>
+</head>
+<body>
+<main>
+  <img class="avatar" src="avatar.jpg" alt="Matthew">
+  <h1>Mocha Views</h1>
+  <p class="handle">@mocha_views</p>
+  <p class="bio">Style, fitness &amp; travel from the DC area.<br>Every photo is mine.<br><em>Leveling up, one day at a time.</em></p>
+
+  <nav class="links">
+    <a class="btn primary" href="https://www.instagram.com/mocha_views/" target="_blank" rel="noopener">Instagram <span class="arrow">→</span></a>
+    <div class="soon">TikTok <small>Coming soon</small></div>
+    <div class="soon">Shop my fits <small>Coming soon</small></div>
+    <div class="soon">Gear I use <small>Coming soon</small></div>
+    <a class="btn" href="https://ig.me/m/mocha_views" target="_blank" rel="noopener">Collabs &amp; brand deals: DM me <span class="arrow">→</span></a>
+  </nav>
+
+  <div class="pillars"><span>Style</span><span>Fitness</span><span>Cars</span><span>Travel</span><span>Photo</span></div>
+  <footer>Mocha Views</footer>
+</main>
+</body>
+</html>
